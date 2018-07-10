@@ -424,21 +424,30 @@ p.service-description {
     display: flex;
     background-color: #303030;
     width: 960px;
-    height: 387px;
+    height: 100px;
     margin: 0 auto;
     padding-top: 38px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    color: #fff;
+    justify-content: flex-start;
+    align-content: center;
+    color: #76c38f;
 }
 
 .footer-flex-wrapper .title {
-    font-size: 16px;
+    font-size: 24px;
+    margin-right: auto;
+    text-transform: uppercase;
 }
 
-.footer-flex-wrapper .blog, .links, .tweets, .contact {
+/* .footer-flex-wrapper .blog, .links, .tweets, .contact {
     text-align: left;
     width: 225px;
+} */
+
+.footer-flex-wrapper i {    
+    font-size: 40px;
+    margin-top: -8px;
+    margin-left: 20px;
 }
 
 .copyright-line {

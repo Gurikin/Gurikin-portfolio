@@ -60,10 +60,6 @@ a, a:hover {
     float: right;
 }
 
-/* #wrapper {
-    height: 1573px;
-} */
-
 .container {
     width: 960px;
     margin: 0 auto;
@@ -121,6 +117,10 @@ a, a:hover {
     font-size: 13px;
     color: #fff;
     transition: 0.4s;
+}
+
+.nav li a#lang {
+    text-decoration: underline;
 }
 
 .nav li:hover {
@@ -191,6 +191,7 @@ a, a:hover {
 }
 
 .btn {
+    width: 45%;
     padding: 12px 16px;
     font: 13px 'Georgia Regular', Arial, sans-serif;
     background-color: #76c38f;
@@ -222,9 +223,91 @@ a, a:hover {
     border: 27px solid #6b6b6b;
 }
 
-.slider-photo {
-    
+.modalWindow {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
 }
+
+/* активируем модальное окно */
+
+.modalWindow:target {
+    display: block;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+/* блочная таблица */
+
+.modalWindow-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+/* ячейка блочной таблицы */
+
+.modalWindow-cell {
+    display: table-cell;
+    padding: 1em 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.modalWindow-container {
+    font-size: 14px;
+    min-width: 75%;
+    min-height: 50%;
+    display: inline-block;
+    background: #dddddd;
+    color: white;
+    border: 2px solid #333;
+    padding: 10px;
+    padding-bottom: 5px;
+    align-content: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px 20px #76c38f;;
+    /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #76c38f;;
+    /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #76c38f;;
+    /* Safari, Chrome */
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px;
+    /* Firefox */
+    -webkit-border-radius: 15px;
+    /* Safari, Chrome */
+}
+
+.modalWindow-content {
+    width: 100%;
+    color: #2c4734;
+}
+
+.modalWindow-content>h3.service-title{
+    font-size: 46px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.modalWindow-content>ul.service-description{
+    list-style: square outside;
+}
+
+.modalWindow-content>ul.service-description>li{
+    padding: 10px 30px;
+    font-size: 22px;
+    color: #303030;
+    text-align: left;
+}
+
 
 .container-flex {
     display: flex;
@@ -240,13 +323,24 @@ a, a:hover {
 }
 
 .service-card {
+    transform: scale(1, 1);
     width: 224px;
     height: 305px;
     margin-top: 60px;
     background-color: #fff;
     padding: 20px;
     transition: 1s;
+    z-index: 1;
 }
+
+/* .service-card .card-content-wrapper {
+    transform: scale(1,1);
+}
+
+.service-card.scaled, .service-card.scaled:hover {
+    transform: scale(3,2);
+    z-index: 5;
+} */
 
 .service-card .card-simbol {
     position: relative;
@@ -279,6 +373,29 @@ p.service-description {
     color: #979797;
     transition: 0.5s;
 }
+
+/* .service-card.scaled .card-content-wrapper.scaled {
+    width: 100%;
+    height: 100%;    
+}
+
+.service-card.scaled .card-content-wrapper.scaled h3.service-title{
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 16px;
+    text-align: center;
+    color: #333333;
+    transition: 0.5s;
+}
+
+.service-card.scaled .card-content-wrapper.scaled p.service-description{
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 16px;
+    text-align: center;
+    color: #333333;
+    transition: 0.5s;
+} */
 
 .service-card:hover {
     background-color: #76c38f;
@@ -450,7 +567,7 @@ p.service-description {
     width: 225px;
 } */
 
-.footer-flex-wrapper i {    
+.footer-flex-wrapper i {
     font-size: 40px;
     margin-top: -8px;
     margin-left: 20px;

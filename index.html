@@ -45,45 +45,55 @@
                 </div>
                 <ul class="nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index-ru.html" id="lang">Rus</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#latest-works">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="wrapper">
-            <section id="body-background">
-                <section class="slider">
+            <div id="body-background">
+                <div class="slider">
                     <div class="review-flex-wrap">
-                        <div class="left-arrow">
+                        <!-- <div class="left-arrow">
                             <img src="img/Left arrow.svg" alt="">
-                        </div>
+                        </div> -->
                         <div class="review-title">
                             <h1>Igor Banchikov
                                 <br>web developing</h1>
-                            <p>It's pleasure to present for You my portfolio</p>
-                            <button class="btn">Read more here</button>
+                            <p>It's pleasure to present for You my skills</p>
+                            <a class="btn" type="button" href="#skills"> Read more here »</a>
                         </div>
                         <div class="slider-photo"></div>
-                        <div class="right-arrow">
+                        <!-- <div class="right-arrow">
                             <img src="img/Right arrow.svg" alt="">
+                        </div> -->
+                    </div>
+                </div>
+                <div id='modalWindow' class='modalWindow'>
+                    <div class="modalWindow-table">
+                        <div class="modalWindow-cell">
+                            <div id='modalWindow-container' class='modalWindow-container'>
+                                <!-- <div href="" class="close" onclick="$('#modalWindow').fadeToggle(350);"></div> -->
+                                <div id='modalWindow-content' class='modalWindow-content'></div>
+                            </div>
                         </div>
                     </div>
-                </section>
-                <div class="container-flex">
+                </div>
+                <div class="container-flex" id="skills">
                     <div class="service-card" id="markup">
                         <div class="card-content-wrapper">
                             <div class="card-simbol">
                                 <i class="fab fa-html5"></i>
                             </div>
-                            <h3 class="service-title">MarkUp HTML+CSS</h3>
-                            <p class="service-description">Creation markUp from your design maket</p>
+                            <h3 class="service-title">Layout HTML+CSS</h3>
+                            <p class="service-description">Creation layout from your design maket</p>
                         </div>
                     </div>
                     <div class="service-card" id="front">
@@ -105,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-grid-latest">
+                <div class="container-grid-latest" id="latest-works">
                     <span></span>
                     <h2 class="latest-subtitle">
                         Latest work
@@ -146,8 +156,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="footer">
+            </div>
+            <div class="footer">
                 <div class="footer-flex-wrapper">
                     <span class="title">Contact me via</span>
                     <i class="fab fa-facebook-square size-3x"></i>
@@ -155,8 +165,8 @@
                     <i class="fas fa-envelope"></i>
                     <i class="fas fa-phone-square"></i>
                 </div>
-            </section>
-            <section class="copyright-line">
+            </div>
+            <div class="copyright-line">
                 <div class="copyright-flex-wrapper">
                     <span class="rights">
                         Copyright © 2018 Igor Banchikov - All Rights Reserved
@@ -165,7 +175,7 @@
                         Template by OS Templates
                     </span>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
     <!-- <script src="" async defer></script> -->

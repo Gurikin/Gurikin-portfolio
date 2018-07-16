@@ -1,20 +1,13 @@
 $(function () {
-    $(document).on("click", ".service-card", function () {
+    $('.service-card').on('click', function () {
+        $('#modalWindow').fadeToggle(1000);
         var id = $(this).attr('id');
-        $('#' + id + ' .card-content-wrapper').fadeToggle(500);
-        console.log(id);
-        var scl = $('#' + id).attr('class');
-        if ((scl.indexOf('scaled')+1)) {
-            $('#' + id).css('transform', 'scale(1,1)');
-            $('#' + id).css('z-index', '1');
-        } else {
-            $('#' + id).css('transform', 'scale(3,2)');
-            $('#' + id).css('z-index', '5');
-        }
-        $('#' + id).toggleClass('scaled');                
-        $.get('/cards/markup.html', function(data) {
-            $('#' + id).css('unset');
-            $('#' + id).html(data);
-        }).delay(1000);
+        var source = '/cards/' + id + '.html';
+        $.get(source, function (data) {
+            $("#modalWindow-content").html(data);
+        });
+    });
+    $('#modalWindow').on('click', function () {
+        $('#modalWindow').fadeToggle(1000);
     });
 });

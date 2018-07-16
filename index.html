@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/animation.js"></script>
 </head>
 
 <body>
@@ -24,14 +26,14 @@
         <![endif]-->
 
 
-        <!--
+    <!--
         TODO need to fill the slider content
         TODO need to add animate for the skills-card
         TODO need to create micropages for the skills
         TODO add the ajax requests for this skills card
         TODO create the real site markup
         -->
-        
+
 
     <div id="wrapper">
         <div class="top-border"></div>
@@ -72,31 +74,37 @@
                         <div class="right-arrow">
                             <img src="img/Right arrow.svg" alt="">
                         </div>
-                    </div>                    
+                    </div>
                 </section>
-                <ul class="container-flex">
-                    <div class="service-card">
-                        <div class="card-simbol">
-                            <i class="fab fa-html5"></i>
+                <div class="container-flex">
+                    <div class="service-card" id="markup">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="service-title">MarkUp HTML+CSS</h3>
+                            <p class="service-description">Creation markUp from your design maket</p>
                         </div>
-                        <h3 class="service-title">MarkUp HTML+CSS</h3>
-                        <p class="service-description">Creation markUp from your design maket</p>
                     </div>
-                    <div class="service-card">
-                        <div class="card-simbol">
-                            <i class="fab fa-js-square"></i>
+                    <div class="service-card" id="front">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3 class="service-title">Frontend on JS</h3>
+                            <p class="service-description">Add dinamically behavior to your page</p>
                         </div>
-                        <h3 class="service-title">Frontend on JS</h3>
-                        <p class="service-description">Add dinamically behavior to your page</p>
                     </div>
-                    <div class="service-card">
-                        <div class="card-simbol">
-                            <i class="fas fa-code-branch"></i>
+                    <div class="service-card" id="back">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h3 class="service-title">BackEnd on PHP</h3>
+                            <p class="service-description">Design functional on server side. Get the fast & secure site</p>
                         </div>
-                        <h3 class="service-title">BackEnd on PHP</h3>
-                        <p class="service-description">Design functional on server side. Get the fast & secure site</p>
                     </div>
-                </ul>
+                </div>
                 <div class="container-grid-latest">
                     <span></span>
                     <h2 class="latest-subtitle">
@@ -141,11 +149,11 @@
             </section>
             <section class="footer">
                 <div class="footer-flex-wrapper">
-                    <span class="title">Contact with me follow to the</span>
+                    <span class="title">Contact me via</span>
                     <i class="fab fa-facebook-square size-3x"></i>
                     <i class="fab fa-vk"></i>
                     <i class="fas fa-envelope"></i>
-                    <i class="fas fa-phone-square"></i>                    
+                    <i class="fas fa-phone-square"></i>
                 </div>
             </section>
             <section class="copyright-line">

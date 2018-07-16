@@ -233,13 +233,19 @@ a, a:hover {
     justify-content: space-around;
 }
 
+.card-content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .service-card {
     width: 224px;
     height: 305px;
     margin-top: 60px;
     background-color: #fff;
     padding: 20px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .service-card .card-simbol {

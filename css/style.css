@@ -316,12 +316,6 @@ a, a:hover {
     justify-content: space-around;
 }
 
-.card-content-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
 .service-card {
     transform: scale(1, 1);
     width: 224px;
@@ -331,6 +325,23 @@ a, a:hover {
     padding: 20px;
     transition: 1s;
     z-index: 1;
+}
+
+.service-card.ru {
+    transform: scale(1, 1);
+    width: 224px;
+    height: 315px;
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    transition: 1s;
+    z-index: 1;
+}
+
+.card-content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 /* .service-card .card-content-wrapper {
@@ -366,8 +377,29 @@ h3.service-title {
     /* margin-left: 46px; */
 }
 
+h3.service-title.ru{
+    /* position: relative; */
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 16px;
+    text-align: center;
+    color: #333333;
+    transition: 0.5s;
+    /* margin-left: 46px; */
+}
+
 p.service-description {
     font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+    color: #979797;
+    transition: 0.5s;
+}
+
+p.service-description.ru {
+    font-size: 12px;
+    line-height: 15px;
     text-align: center;
     margin-top: 14px;
     color: #979797;
@@ -477,32 +509,35 @@ p.service-description {
     transition: .7s;
 }
 
+.i1, .i2, .i3, .i4, .i5, .i6 {
+    -webkit-background-size: content-box;
+    -moz-background-size: content-box;
+    -o-background-size: content-box;
+    background-size: content-box;
+}
+
 .i1 {
-    background: url(../img/wp-portfolio.png) repeat center center;
-    -webkit-background-size: border-box;
-    -moz-background-size: border-box;
-    -o-background-size: border-box;
-    background-size: border-box;
+    background: url(../img/modern-banner_1176-220.jpg) no-repeat center center;    
 }
 
 .i2 {
-    background: url(../img/html-portfolio.png) repeat center bottom;
-    -webkit-background-size: border-box;
-    -moz-background-size: border-box;
-    -o-background-size: border-box;
-    background-size: border-box;
+    background: url(../img/hand-drawn-healthy-food-background_23-2147863438.jpg) repeat center bottom;
 }
 
 .i3 {
-    background: url(../img/avatar.jpg) repeat center center;
-    -webkit-background-size: border-box;
-    -moz-background-size: border-box;
-    -o-background-size: border-box;
-    background-size: border-box;
+    background: url(../img/modern-origami-sale-banner_1361-537.jpg) repeat center center;
 }
 
-.i4, .i5, .i6 {
-    background-color: #303030;
+.i4 {
+    background: url(../img/abstract-design-background_1048-6726.jpg) repeat center center;
+}
+
+.i5 {
+    background: url(../img/elegant-wedding-invitation-with-cactus-and-golden-frame_1361-547.jpg) repeat center bottom;
+}
+
+.i6 {
+    background: url(../img/vintage-wedding-frame_1124-133.jpg) repeat center center;
 }
 
 .flex-element-latest-photo-item .bottom-line {

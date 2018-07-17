@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Банчиков И.В. Веб-разработка</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/animation.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <!--
+        TODO need to fill the slider content
+        TODO need to add animate for the skills-card
+        TODO need to create micropages for the skills
+        TODO add the ajax requests for this skills card
+        TODO create the real site markup
+        -->
+
+
+    <div id="wrapper">
+        <div class="top-border"></div>
+        <div id="header">
+            <div class="container clearfix">
+                <div class="title">
+                    <a href="#">Банчиков Игорь</a>
+                    <p>Разработка качественных сайтов</p>
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" id="lang">En</a>
+                    </li>
+                    <li>
+                        <a href="#latest-works">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Навыки</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div id="body-background">
+                <div class="slider">
+                    <div class="review-flex-wrap">
+                        <!-- <div class="left-arrow">
+                            <img src="img/Left arrow.svg" alt="">
+                        </div> -->
+                        <div class="review-title">
+                            <h1>Банчиков Игорь
+                                <br>Веб-разработка</h1>
+                            <p>Подходят ли Вам мои навыки</p>
+                            <a class="btn" type="button" href="#skills">Узнать больше »</a>
+                        </div>
+                        <div class="slider-photo"></div>
+                        <!-- <div class="right-arrow">
+                            <img src="img/Right arrow.svg" alt="">
+                        </div> -->
+                    </div>
+                </div>
+                <div id='modalWindow' class='modalWindow'>
+                    <div class="modalWindow-table">
+                        <div class="modalWindow-cell">
+                            <div id='modalWindow-container' class='modalWindow-container'>
+                                <!-- <div href="" class="close" onclick="$('#modalWindow').fadeToggle(350);"></div> -->
+                                <div id='modalWindow-content' class='modalWindow-content'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-flex" id="skills">
+                    <div class="service-card ru" id="markup">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="service-title ru">Верстка HTML+CSS</h3>
+                            <p class="service-description ru">Качественная верстка на основе макета</p>
+                        </div>
+                    </div>
+                    <div class="service-card ru" id="front">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3 class="service-title ru">Возможности JS</h3>
+                            <p class="service-description ru">Оживление и расширение функционала</p>
+                        </div>
+                    </div>
+                    <div class="service-card ru" id="back">
+                        <div class="card-content-wrapper">
+                            <div class="card-simbol">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h3 class="service-title ru">Мощные возможности PHP</h3>
+                            <p class="service-description ru">Разработка динамического функционала. Быстрый и надежный сайт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-grid-latest" id="latest-works">
+                    <span></span>
+                    <h2 class="latest-subtitle">
+                        Мои работы
+                    </h2>
+                    <span></span>
+                </div>
+                <div class="container">
+                    <div class="container-flex-latest-gallery">
+                        <div class="flex-element-latest-photo-item i1">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                        <div class="flex-element-latest-photo-item i2">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                        <div class="flex-element-latest-photo-item i3">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                        <div class="flex-element-latest-photo-item i4">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                        <div class="flex-element-latest-photo-item i5">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                        <div class="flex-element-latest-photo-item i6">
+                            <div class="bottom-line">
+                                Место для Вашего сайта
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-flex-wrapper">
+                    <span class="title">Свяжитесь со мной</span>
+                    <i class="fab fa-facebook-square size-3x"></i>
+                    <i class="fab fa-vk"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-phone-square"></i>
+                </div>
+            </div>
+            <div class="copyright-line">
+                <div class="copyright-flex-wrapper">
+                    <span class="rights">
+                        Copyright © 2018 Igor Banchikov - All Rights Reserved
+                    </span>
+                    <span class="rights">
+                        Template by OS Templates
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

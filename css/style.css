@@ -262,22 +262,24 @@ a, a:hover {
 }
 
 .modalWindow-container {
+    display: inline-flex;
     font-size: 14px;
-    min-width: 75%;
+    line-height: 32px;
+    min-width: 50%;
     min-height: 50%;
-    display: inline-block;
     background: #dddddd;
     color: white;
     border: 2px solid #333;
     padding: 10px;
     padding-bottom: 5px;
-    align-content: center;
-    vertical-align: middle;
-    box-shadow: 0px 0px 20px #76c38f;;
+    box-shadow: 0px 0px 20px #76c38f;
+    ;
     /* CSS3 */
-    -moz-box-shadow: 0px 0px 20px #76c38f;;
+    -moz-box-shadow: 0px 0px 20px #76c38f;
+    ;
     /* Firefox */
-    -webkit-box-shadow: 0px 0px 20px #76c38f;;
+    -webkit-box-shadow: 0px 0px 20px #76c38f;
+    ;
     /* Safari, Chrome */
     border-radius: 15px 15px 15px 15px;
     -moz-border-radius: 15px;
@@ -291,23 +293,22 @@ a, a:hover {
     color: #2c4734;
 }
 
-.modalWindow-content>h3.service-title{
+.modalWindow-content>h3.service-title {
     font-size: 46px;
     color: #303030;
     margin-bottom: 30px;
 }
 
-.modalWindow-content>ul.service-description{
+.modalWindow-content>ul.service-description {
     list-style: square outside;
 }
 
-.modalWindow-content>ul.service-description>li{
+.modalWindow-content>ul.service-description>li {
     padding: 10px 30px;
     font-size: 22px;
     color: #303030;
     text-align: left;
 }
-
 
 .container-flex {
     display: flex;
@@ -377,7 +378,7 @@ h3.service-title {
     /* margin-left: 46px; */
 }
 
-h3.service-title.ru{
+h3.service-title.ru {
     /* position: relative; */
     text-transform: uppercase;
     font-size: 22px;
@@ -517,7 +518,7 @@ p.service-description.ru {
 }
 
 .i1 {
-    background: url(../img/modern-banner_1176-220.jpg) no-repeat center center;    
+    background: url(../img/modern-banner_1176-220.jpg) no-repeat center center;
 }
 
 .i2 {
@@ -595,6 +596,13 @@ p.service-description.ru {
     font-size: 24px;
     margin-right: auto;
     text-transform: uppercase;
+}
+
+.footer-flex-wrapper a {
+    height: 35px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #76c38f;
 }
 
 /* .footer-flex-wrapper .blog, .links, .tweets, .contact {

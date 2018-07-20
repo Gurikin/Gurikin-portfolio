@@ -18,6 +18,7 @@
         crossorigin="anonymous">
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/animation.js"></script>
+    <script src="scripts/form.js"></script>
 </head>
 
 <body>
@@ -149,11 +150,30 @@
             <div class="footer">
                 <div class="footer-flex-wrapper">
                     <span class="title">Свяжитесь со мной</span>
-                    <a href="https://www.facebook.com/igor.banchikov.3"><i class="fab fa-facebook-square size-3x"></i></a>
-                    <a href="https://vk.com/gurikin"><i class="fab fa-vk"></i></a>
-                    <a href="mailto:igor.gurik.in@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/igor.banchikov.3">
+                        <i class="fab fa-facebook-square size-3x"></i>
+                    </a>
+                    <a href="https://vk.com/gurikin">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="mailto:igor.gurik.in@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                     <!-- <i class="fas fa-phone-square"></i> -->
                 </div>
+                <form id="ajax-form" class = "footer-flex-wrapper" action="scripts/post.php">
+                    <div class="span-wrapper">
+                        <span>Как к Вам обращаться</span>
+                        <span>Как с Вами связаться</span>
+                        <span>Укажите свою цель</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <input id="uName" type="text" value="Имя" name="name">
+                        <input id="uMail" type="text" Value="Почта/Скайп/WhatsApp/Телефон" name="mail">
+                        <input id="uGoal" type="text" value="Чем я могу Вам помочь?" name="goal">
+                        <input class="submit" type="submit" value="Связаться со мной" onclick="sendAjaxForm_connect()"></input>
+                    </div>
+                </form>
             </div>
             <div class="copyright-line">
                 <div class="copyright-flex-wrapper">
@@ -166,6 +186,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>

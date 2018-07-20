@@ -18,6 +18,7 @@
         crossorigin="anonymous">
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/animation.js"></script>
+    <script src="scripts/form.js"></script>
 </head>
 
 <body>
@@ -149,11 +150,30 @@
             <div class="footer">
                 <div class="footer-flex-wrapper">
                     <span class="title">Contact me via</span>
-                    <a href="https://www.facebook.com/igor.banchikov.3"><i class="fab fa-facebook-square size-3x"></i></a>
-                    <a href="https://vk.com/gurikin"><i class="fab fa-vk"></i></a>
-                    <a href="mailto:igor.gurik.in@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/igor.banchikov.3">
+                        <i class="fab fa-facebook-square size-3x"></i>
+                    </a>
+                    <a href="https://vk.com/gurikin">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="mailto:igor.gurik.in@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                     <!-- <i class="fas fa-phone-square"></i> -->
                 </div>
+                <form id="ajax-form" class = "footer-flex-wrapper" action="scripts/post.php">
+                    <div class="span-wrapper">
+                        <span>Enter Your name, please</span>
+                        <span>How to contact You</span>
+                        <span>Enter your goal</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <input id="uName" type="text" value="Name" name="name">
+                        <input id="uMail" type="text" Value="e-mail/Skype/WhatsApp" name="mail">
+                        <input id="uGoal" type="text" value="How can I help You?" name="goal">
+                        <input class="submit" type="submit" value="Connect with me" onclick="sendAjaxForm_connect()"></input>
+                    </div>
+                </form>
             </div>
             <div class="copyright-line">
                 <div class="copyright-flex-wrapper">

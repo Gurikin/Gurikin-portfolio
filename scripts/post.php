@@ -2,6 +2,7 @@
     error_reporting(0);
     xdebug_disable();//put it on the header of your code,like cofig file.
     require("SendMailSmtp.php");
+    require("const.php");
     $lang = (substr_count($_SERVER['HTTP_REFERER'],'ru') !== 0) ? 'ru' : 'en';
     if ($lang == 'ru') {
         $okResponse = '<h4><b>Ваша заявка успешно принята.</b></h4><p>Я обязательно свяжусь с Вами в ближайшее время.</p>';
@@ -17,7 +18,7 @@
         $mail = $_POST['mail'];
         $goal = $_POST['goal'];
         $message = $name." | ".$mail." | ".$goal;
-        $mailSMTP = new SendMailSmtpClass('gurikin@yandex.ru', 'U&y6T%r4E#w2Q!"', 'ssl://smtp.yandex.ru', 'gurikin', 465);
+        $mailSMTP = new SendMailSmtpClass(MAIL, PASS, SERVER, USER, 465);
         
         // $mailSMTP = new SendMailSmtpClass('логин', 'пароль', 'хост', 'имя отправителя');
         

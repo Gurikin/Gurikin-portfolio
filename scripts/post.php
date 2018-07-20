@@ -18,7 +18,7 @@
         $mail = $_POST['mail'];
         $goal = $_POST['goal'];
         $message = $name." | ".$mail." | ".$goal;
-        $mailSMTP = new SendMailSmtpClass(MAIL, PASS, SERVER, USER, 465);
+        $mailSMTP = new SendMailSmtpClass(MAIL, PASS, MAIL_SERV, USER, 465);
         
         // $mailSMTP = new SendMailSmtpClass('логин', 'пароль', 'хост', 'имя отправителя');
         

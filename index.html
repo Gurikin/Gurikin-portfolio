@@ -27,10 +27,10 @@
         <![endif]-->
     <div id="wrapper">
         <div class="top-border"></div>
-        <div id="header">
-            <div class="container clearfix">
+        <div class="container">
+            <div id="header">
                 <div class="title">
-                    <a href="#">Igor Banchikov</a>
+                    <a href="#ajax-form">Igor Banchikov</a>
                     <p> Complete sites creation</p>
                 </div>
                 <ul class="nav">
@@ -110,7 +110,7 @@
                     <h2 class="latest-subtitle">
                         Latest work
                     </h2>
-                    <span></span>
+                    <!-- <span></span> -->
                 </div>
                 <div class="container">
                     <div class="container-flex-latest-gallery">
@@ -160,20 +160,20 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                     <!-- <i class="fas fa-phone-square"></i> -->
+                    <form id="ajax-form" class="footer-flex-wrapper" action="scripts/post.php">
+                        <div class="span-wrapper">
+                            <span>Enter Your name, please</span>
+                            <span>How to contact You</span>
+                            <span>Enter your goal</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input id="uName" type="text" value="Name" name="name">
+                            <input id="uMail" type="text" Value="e-mail/Skype/WhatsApp" name="mail">
+                            <input id="uGoal" type="text" value="How can I help You?" name="goal">
+                            <input class="submit" type="submit" value="Connect with me" onclick="sendAjaxForm_connect()"></input>
+                        </div>
+                    </form>
                 </div>
-                <form id="ajax-form" class = "footer-flex-wrapper" action="scripts/post.php">
-                    <div class="span-wrapper">
-                        <span>Enter Your name, please</span>
-                        <span>How to contact You</span>
-                        <span>Enter your goal</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <input id="uName" type="text" value="Name" name="name">
-                        <input id="uMail" type="text" Value="e-mail/Skype/WhatsApp" name="mail">
-                        <input id="uGoal" type="text" value="How can I help You?" name="goal">
-                        <input class="submit" type="submit" value="Connect with me" onclick="sendAjaxForm_connect()"></input>
-                    </div>
-                </form>
             </div>
             <div class="copyright-line">
                 <div class="copyright-flex-wrapper">

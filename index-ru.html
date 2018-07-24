@@ -27,10 +27,10 @@
         <![endif]-->
     <div id="wrapper">
         <div class="top-border"></div>
-        <div id="header">
-            <div class="container clearfix">
+        <div class="container">
+            <div id="header">
                 <div class="title">
-                    <a href="#">Банчиков Игорь</a>
+                    <a href="#ajax-form">Банчиков Игорь</a>
                     <p>Разработка качественных сайтов</p>
                 </div>
                 <ul class="nav">
@@ -110,7 +110,7 @@
                     <h2 class="latest-subtitle">
                         Мои работы
                     </h2>
-                    <span></span>
+                    <!-- <span></span> -->
                 </div>
                 <div class="container">
                     <div class="container-flex-latest-gallery">
@@ -160,20 +160,20 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                     <!-- <i class="fas fa-phone-square"></i> -->
+                    <form id="ajax-form" class="footer-flex-wrapper" action="scripts/post.php">
+                        <div class="span-wrapper">
+                            <span>Как к Вам обращаться</span>
+                            <span>Как с Вами связаться</span>
+                            <span>Укажите свою цель</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <input id="uName" type="text" value="Имя" name="name">
+                            <input id="uMail" type="text" Value="Почта/Скайп/WhatsApp/Телефон" name="mail">
+                            <input id="uGoal" type="text" value="Чем я могу Вам помочь?" name="goal">
+                            <input class="submit" type="submit" value="Связаться со мной" onclick="sendAjaxForm_connect()"></input>
+                        </div>
+                    </form>
                 </div>
-                <form id="ajax-form" class = "footer-flex-wrapper" action="scripts/post.php">
-                    <div class="span-wrapper">
-                        <span>Как к Вам обращаться</span>
-                        <span>Как с Вами связаться</span>
-                        <span>Укажите свою цель</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <input id="uName" type="text" value="Имя" name="name">
-                        <input id="uMail" type="text" Value="Почта/Скайп/WhatsApp/Телефон" name="mail">
-                        <input id="uGoal" type="text" value="Чем я могу Вам помочь?" name="goal">
-                        <input class="submit" type="submit" value="Связаться со мной" onclick="sendAjaxForm_connect()"></input>
-                    </div>
-                </form>
             </div>
             <div class="copyright-line">
                 <div class="copyright-flex-wrapper">
